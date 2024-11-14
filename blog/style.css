@@ -16,6 +16,19 @@ body {
     min-height: 200vh;
 }
 
+
+hr {
+
+
+    /* Removes default Bevel*/
+    border: none;
+    border-top: 1px solid cornsilk;
+
+    /* will not get replaced by other classes*/
+    margin-top: 50px auto !important;
+    margin-bottom: 50px !important;
+}
+
 /****************** INTRO ******************/
 .intro {
     background-image: url(images/leaves.jpg);
@@ -24,11 +37,20 @@ body {
     background-attachment: fixed;
 
     width: 100vw; /* viewport width */
-    width: auto; /* replaces vw and fixes scrolling*/
+    width: auto; /* replaces vw and fixes scrolling */
 
-    height: 100vh; /* viewpoint height */
+    height: 100vh; /* viewport height */
 
     display: flex;
+
+    /* helps put the intro screen in front of the navbar */
+    position: relative;
+    z-index: 1010;
+}
+
+.intro-narrow {
+    height: 75vh;
+    z-index: 990;
 }
 
 .intro-container {
@@ -95,126 +117,171 @@ body {
     transition-timing-function: linear;
 }
 
-
-/****************** Container ******************/
-
+/****************** CONTAINER ******************/
 .container {
-    background-color: darkolivegreen;
-
     max-width: 1280px;
     margin: auto;
 }
 
-/****************** Grid layout ******************/
+/****************** GRID LAYOUT ******************/
 .row {
     display: flex;
     flex-wrap: wrap;
 
     gap: 50px;
-
 }
 
 .two-columns .card {
-    width: calc((100% - 50px) / 2) ;
-
-
+    width: calc((100% - 50px) / 2);
 }
 
 .three-columns .card {
-    width: calc((100% - 100px) / 3) ;
-
-
+    width: calc((100% - 100px) / 3);
 }
-
-
 
 /****************** WEBSITE CONTENT ******************/
-
 .main-content {
     margin-top: 100px;
-
 }
+
+.content-narrow{
+    width: 50%;
+    min-width: 640px;
+    margin: auto;
+}
+
 .vertical-title {
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: normal;
 
-
-    background-color: darkred;
-    transform: rotate(90deg) translate(5px);
     transform-origin: 0 0;
+    transform: rotate(90deg) translateY(5px);
+
     position: absolute;
 }
 
-.footer {
-
-    background-color: darkseagreen; 
-
-    margin: auto;
-    height: 60px;
-    padding: 70px;
-    text-align: left
-    
-}
-
 /****************** FOOTER ******************/
-.website footer{
-
-    background-color: burlywood;
+.website-footer {
+    background-color: #eee;
     padding: 50px;
-
 }
 
-
-.webiste footer .container{
+.website-footer .container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.website footer summary{
+.website-footer .summary {
     width: 33%;
-
 }
-.website-footer .footer-links{
-    margin-left: auto;
-    list-style: none;
 
-    column-count: 2;
+.website-footer .footer-links {
+    margin-left: auto;
+
+    list-style: none;
+    
+    columns: 2;
     gap: 50px;
 }
 
-.website-footer .footer-item{
-
+.website-footer .footer-item {
     margin-bottom: 10px;
-
 }
 
-.website-footer .footer-link{
+.website-footer .footer-link {
     color: #000;
     text-decoration: none;
 }
 
-.website-footer .copyright{
+.website-footer .copyright {
     width: 100%;
-    margin-top: 50px;
-    text-align: center;
 
+    margin-top: 50px;
+
+    text-align: right;
 }
 
-/****************** FOOTER ******************/
+/****************** NAVBAR ******************/
+.navbar {
+    background-color: #fff;
 
-.navator {
-    border-color: floralwhite;
+    border-color: #ddd;
     border-style: solid;
     border-width: 0;
 
+    /* overrides the cleared borders */
     border-bottom-width: 1px;
 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    z-index: 1000;
 }
 
-.navigator .container{
+.navbar .container {
     display: flex;
+}
+
+.navbar a {
+    /* this will add padding to the elements later */
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-link {
+    /* padding: top/bottom left/right */
+    padding: 30px 20px;
+}
+
+.navbar-brand {
+    font-family: Cardo, Georgia, 'Times New Roman', Times, serif;
+    
+    /* scale by 150% of the original font size */
+    font-size: 1.5em;
+    font-weight: bold;
+
+    align-content: center;
+}
+
+/****************** STORIES ******************/
+.story-header h1 {
+    /* 200% of the current font size */
+    font-size: 2em;
+    margin-bottom: 25px;
 
 }
+
+
+.story-header p {
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+
+
+    line-height: 1.2;
+}
+
+.story-header .byline{
+    margin-top: 10px;
+}
+
+/* Targets EVERYTHING insid ethe byline class*/
+
+.story-header .byline  * {
+    font-style: normal;
+
+    display: inline;
+}
+
 
