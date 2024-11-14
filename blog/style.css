@@ -131,6 +131,10 @@ hr {
     gap: 50px;
 }
 
+.one-column .card{
+    width: 100%;
+}
+
 .two-columns .card {
     width: calc((100% - 50px) / 2);
 }
