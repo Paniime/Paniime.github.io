@@ -16,16 +16,13 @@ body {
     min-height: 200vh;
 }
 
-
 hr {
-
-
-    /* Removes default Bevel*/
+    /* Removes the default bevel */
     border: none;
-    border-top: 1px solid cornsilk;
+    border-top: 1px solid #ccc;
 
-    /* will not get replaced by other classes*/
-    margin-top: 50px auto !important;
+    /* will not get replaced by other classes */
+    margin-top: 50px !important;
     margin-bottom: 50px !important;
 }
 
@@ -131,7 +128,7 @@ hr {
     gap: 50px;
 }
 
-.one-column .card{
+.one-column .card {
     width: 100%;
 }
 
@@ -143,14 +140,19 @@ hr {
     width: calc((100% - 100px) / 3);
 }
 
+.four-columns .card {
+    width: calc((100% - 150px) / 4);
+}
+
 /****************** WEBSITE CONTENT ******************/
 .main-content {
     margin-top: 100px;
 }
 
-.content-narrow{
+.content-narrow {
     width: 50%;
     min-width: 640px;
+
     margin: auto;
 }
 
@@ -263,29 +265,82 @@ hr {
     /* 200% of the current font size */
     font-size: 2em;
     margin-bottom: 25px;
-
 }
-
 
 .story-header p {
     font-size: 1.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Cardo, Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-
 
     line-height: 1.2;
 }
 
-.story-header .byline{
+.story-header .byline {
     margin-top: 10px;
 }
 
-/* Targets EVERYTHING insid ethe byline class*/
-
-.story-header .byline  * {
+/* Targets EVERYTHING inside the byline class */
+.story-header .byline * {
     font-style: normal;
 
     display: inline;
 }
 
+.story-content p, .story-content .row {
+    margin-bottom: 50px;
+}
 
+.story-footer {
+    background-color: #f0f0f0;
+
+    padding: 100px 50px;
+    margin: 50px auto;
+}
+
+.story-footer p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    background-color: #e0e0e0;
+
+    /* Removes an underline between the links */
+    display: block;
+
+    margin: 10px;
+    padding: 10px;
+
+    transition-property: background-color;
+    transition-duration: 0 .15s;
+}
+
+.social-icon svg {
+    display: block;
+
+    font-size: 20px;
+    
+    width: 1em;
+    height: 1em;
+
+    transition-property: fill;
+    transition-duration: 0.15s;
+}
+
+.social-icon:hover {
+    background-color: #000;
+}
+
+.social-icon:hover svg {
+    fill: #fff;
+}
+
+.keep-reading {
+    background-color: #f3f3f3;
+    padding: 50px 50px 0;
+}
