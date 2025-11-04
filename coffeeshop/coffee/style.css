@@ -1,3 +1,12 @@
+
+
+
+/* imports google fonts embed */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&display=swap');
+
+
 /* CSS reset */
 *{
     margin: 0;
@@ -7,9 +16,14 @@
 
 
 body{
+    font-family: Roboto, Arial,sans-serif;
     line-height: 1.5;
 
 
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Noto serif,serif";
+    margin-bottom: 0.5rem;
 }
 
 
@@ -23,7 +37,7 @@ body{
 
 
 /************************ SWATCHES **************************/
-.swatchs{
+.swatches{
     display: flex; /* ORGANIZE CHILD ELEMENTS IN A LINE*/
     gap: 1rem;
 
@@ -32,7 +46,6 @@ body{
 
 .swatch .swatch-value {
     width: 4rem; /* em - Root font size (16px) */
-    height: 4rem;
     aspect-ratio: 1/1;
     border-radius: 100%;
     box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(54, 48, 41, 0.2);
@@ -41,3 +54,4 @@ body{
 .swatch .swatch-name {
     text-align: center;
 }
+
