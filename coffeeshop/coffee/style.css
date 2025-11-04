@@ -6,6 +6,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&display=swap');
 
+/*variables for the webstie*/
+
+:root{
+    --primary: rgb(123, 75, 45);
+--light: rgb(#ffffff);
+--dark: rgb(54, 48, 45);
+--mute: rgb(226, 205, 192);
+}
+
+
 
 /* CSS reset */
 *{
