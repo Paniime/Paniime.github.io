@@ -23,9 +23,21 @@ body{
 
 
 /************************ SWATCHES **************************/
+.swatchs{
+    display: flex; /* ORGANIZE CHILD ELEMENTS IN A LINE*/
+    gap: 1rem;
+
+}
+
+
 .swatch .swatch-value {
     width: 4rem; /* em - Root font size (16px) */
     height: 4rem;
     aspect-ratio: 1/1;
     border-radius: 100%;
+    box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(54, 48, 41, 0.2);
+}
+
+.swatch .swatch-name {
+    text-align: center;
 }
