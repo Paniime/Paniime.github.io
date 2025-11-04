@@ -38,17 +38,17 @@ h1,h2,h3,h4,h5,h6{
 
 
 /************************ COLOURS **************************/
-.bg-primary {background-color: rgb(123, 75, 45);}
-.bg-light {background-color: rgb(#ffffff);}
-.bg-dark {background-color: rgb(54, 48, 45);}
-.bg-mute {background-color: rgb(226, 205, 192);}
+.bg-primary {background-color: var(--primary);}
+.bg-light {background-color: var(--light);}
+.bg-dark {background-color: var(--dark);}
+.bg-mute {background-color: var(--mute);}
 
 
 
-.text-primary {color: rgb(123, 75, 45);}
-.text-light {color: rgb(#ffffff);}
-.text-dark {color: rgb(54, 48, 45);}
-.text-mute {color: rgb(226, 205, 192);}
+.text-primary {color: var(--primary);}
+.text-light {color: var(--light);}
+.text-dark {color: var(--dark);}
+.text-mute {color: var(--mute);}
 
 /************************ SWATCHES **************************/
 .swatches{
