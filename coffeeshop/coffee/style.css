@@ -29,16 +29,16 @@ h1,h2,h3,h4,h5,h6{
 
 /************************ COLOURS **************************/
 .bg-primary {background-color: rgb(123, 75, 45);}
-.bg-light {    background-color: rgb(#ffffff);}
-.bg-dark {    background-color: rgb(54, 48, 45);}
-.bg-muted {    background-color: rgb(226, 205, 192);}
+.bg-light {background-color: rgb(#ffffff);}
+.bg-dark {background-color: rgb(54, 48, 45);}
+.bg-mute {background-color: rgb(226, 205, 192);}
 
 
 
 .text-primary {color: rgb(123, 75, 45);}
-.text-light {    color: rgb(#ffffff);}
-.text-dark {    color: rgb(54, 48, 45);}
-.text-muted {    color: rgb(226, 205, 192);}
+.text-light {color: rgb(#ffffff);}
+.text-dark {color: rgb(54, 48, 45);}
+.text-mute {color: rgb(226, 205, 192);}
 
 /************************ SWATCHES **************************/
 .swatches{
