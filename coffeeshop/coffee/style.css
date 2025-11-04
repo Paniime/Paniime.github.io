@@ -13,11 +13,19 @@ body{
 }
 
 
-/************************ SWATCHES **************/
-..swatch.swatch-value {
-    background-color: black;
+/************************ COLOURS **************************/
+.bg-primary {background-color: rgb(123, 75, 45);}
+.bg-light {    background-color: rgb(#ffffff);}
+.bg-dark {    background-color: rgb(54, 48, 45);}
+.bg-muted {    background-color: rgb(226, 205, 192);}
+
+
+
+
+/************************ SWATCHES **************************/
+.swatch .swatch-value {
     width: 4rem; /* em - Root font size (16px) */
     height: 4rem;
     aspect-ratio: 1/1;
-    
+    border-radius: 100%;
 }
