@@ -49,6 +49,29 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+
+/************************ COLOURS **************************/
+
+.btn {
+    border: none;
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+    cursor: pointer;  /* cursor wait makes it crash ;) */
+}
+
+
+.btn.primary{
+    background-color: var(--primary);
+    color: var(--light);
+}
+    
+.btn.-secondary{
+    background-color: var(--mute);
+    color: var(--dark);
+
+}
+
+
 /************************ COLOURS **************************/
 .bg-primary {background-color: var(--primary);}
 .bg-light {background-color: var(--light);}
