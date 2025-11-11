@@ -14,8 +14,8 @@
 --dark: rgb(54, 48, 45);
 --mute: rgb(226, 205, 192);
 
---font-normal: roboto, Arial, sans-seriff
---font-heading: 'Noto serif', serif;
+--font-normal: roboto, Arial, sans-serif;
+--font-heading: 'Noto Serif', serif;
 
 --space-0: 0; /*0px */
 --space-1: 0.5rem; /* 8px*/
@@ -38,13 +38,13 @@
 
 
 body{
-    font-family: Roboto, Arial,sans-serif;
+    font-family: var(--font-normal);
     line-height: 1.5;
 
 
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: "Noto serif,serif";
+    font-family: var(--font-heading);
     margin-bottom: 0.5rem;
 }
 
@@ -62,11 +62,27 @@ h1,h2,h3,h4,h5,h6{
 .text-dark {color: var(--dark);}
 .text-mute {color: var(--mute);}
 
+/************************ SPACING **************************/
+
+.m-0 { margin: var(--space-0);}
+.m-1 { margin: var(--space-1);}
+.m-2 { margin: var(--space-2);}
+.m-3 { margin: var(--space-3);}
+
+
+.p-0 { padding: var(--space-0);}
+.p-1 { padding: var(--space-1);}
+.p-2 { padding: var(--space-2);}
+.p-3 { padding: var(--space-3);}
+
+.gap-0 { gap: var(--space-0);}
+.gap-1 { gap: var(--space-1);}
+.gap-2 { gap: var(--space-2);}
+.gap-3 { gap: var(--space-3);}
+
 /************************ SWATCHES **************************/
 .swatches{
     display: flex; /* ORGANIZE CHILD ELEMENTS IN A LINE*/
-    gap: 1rem;
-
 }
 
 
