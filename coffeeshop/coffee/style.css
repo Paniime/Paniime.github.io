@@ -13,7 +13,19 @@
 --light: rgb(#ffffff);
 --dark: rgb(54, 48, 45);
 --mute: rgb(226, 205, 192);
+
+--font-normal: roboto, Arial, sans-seriff
+--font-heading: 'Noto serif', serif;
+
+--space-0: 0; /*0px */
+--space-1: 0.5rem; /* 8px*/
+--space-2: 1rem; /*16px*/
+--space-3: 0.2rem; /*32px*/
+
 }
+
+
+
 
 
 
