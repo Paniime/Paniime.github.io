@@ -122,6 +122,8 @@ h1,h2,h3,h4,h5,h6{
 .text-dark {color: var(--dark);}
 .text-mute {color: var(--mute);}
 
+.shadow-dark { box-shadow: var(--shadow-dark);}
+.shadow-light { box-shadow: var(--shadow-light);}
 
 /************************ COMPONENTS**************************/
 
@@ -134,7 +136,7 @@ h1,h2,h3,h4,h5,h6{
 
 
     aspect-ratio: 16 /9;
-    width: 20%;
+    width: 50%;
     object-fit: cover;
 
 
@@ -156,7 +158,29 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+.tags {
+    display: flex;
+    gap: var(--space-1);
+    list-style: none;
+
+}
+
+
+.tags .tags-item{
+    background-color: var(--primary);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+}
+
 /************************ LAYOUT **************************/
+
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
 
 .d-flex {display: flex;}
 
@@ -166,7 +190,6 @@ h1,h2,h3,h4,h5,h6{
     display: grid;
     grid-template-columns: repeat(2, 1fr); /*repeat 1fr twice*/
 }
-
 
 
 
