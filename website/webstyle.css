@@ -118,6 +118,8 @@
 /************************ LAYOUT **************************/
 
 
+
+
 .container{
     max-width: 1280px;
     margin: auto;
@@ -130,6 +132,7 @@
 .center-self{ align-self: center;}
 
 .flex-between {justify-content : space-between}
+
 
 .grid-2col {
     display: grid;
