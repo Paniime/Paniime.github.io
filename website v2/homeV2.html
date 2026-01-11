@@ -11,72 +11,8 @@
 
 
 
-<header class="w3-container w3-teal" >
-
- <div class="w3-flex" style="justify-content:flex-start"> 
-   <img class="mySlides" src="cog.png" style="width:10%">
- </div>
 
 
-<div class="w3-flex"  style="height:200px;align-items:center" style="justify-content:center">
-    <a href="#" class="w3-button w3-round w3-black">Link Button</a>
-    <a href="#" class="w3-button w3-round w3-black">Link Button</a>
-    <a href="#" class="w3-button w3-round w3-black">Link Button</a>
-  </div>
-
-
-     <div class="w3-flex center-items " >
-                <input type="text"  placeholder="search" class="search-bar">
-                <img class="m-2" src="images-web/cog.png" alt="cog" height="40rem">
-            </div>
-</header>
-
-
-<h2 class="w3-center">Manual Slideshow</h2>
-
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="cog.png" style="width:100%">
-  <img class="mySlides" src="logo.jpg" style="width:100%">
-  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
-  <img class="mySlides" src="img_forest.jpg" style="width:100%">
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
-
-
-
-
-
-
-
-
-
-<div class="w3-container">
-  <p>A car is a wheeled, self-powered motor vehicle used for transportation.
-  Most definitions of the term specify that cars are designed to run primarily on roads,
-  to have seating for one to eight people, to typically have four wheels. (Wikipedia)</p>    
 
 
 
