@@ -2,17 +2,17 @@
 
 
 :root{
-    --primary: #320b9e;
-    --primary-tint: #1f5bae;
+    --primary: #160f66;
+    --primary-tint: #9b9bc0;
     --primary-shade: #251b45;
     
     
-    --light: #ffffff;
+    --light: #c0c4c8;
     --dark: #36302d;
     
-    --mute: #c8ad9c;
-    --mute-tint: #ffdbc7;
-    --mute-shade: #ab9587;
+    --mute: #4468e0;
+    --mute-tint: #ccdbfb;
+    --mute-shade: #3d44c9;
     
     --font-normal: Roboto, Arial, sans-serif;
     --font-heading: 'Noto Serif', serif;
