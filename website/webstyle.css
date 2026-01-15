@@ -9,8 +9,17 @@
     
     --light: #c0c4c8;
     --dark: #36302d;
+
+    --pink: #c35bb7;
+    --green: #358754;
+    --blue: #32c5c5;
+    --yellow: #b99528;
+    --red: #e7301c;
+    --purple: #9f4edc;
+    --orange: #d38a1d;
+
     
-    --mute: #4468e0;
+    --mute: #d6def1;
     --mute-tint: #ccdbfb;
     --mute-shade: #3d44c9;
     
@@ -104,8 +113,8 @@
 }
 
 .product-image .product-tag{
-    background-color: var(--dark);
-    color: var(--light);
+    
+    color: #fff;
     box-shadow: var(--shadow-light);
     padding: var(--space-1) var(--space-2);
     border-radius: var(--space-3);
@@ -190,6 +199,14 @@
 .bg-muted {background-color: var(--mute);}
 
 
+.tag-P {background-color: var(--pink);}
+.tag-Y {background-color: var(--yellow);}
+.tag-B {background-color: var(--blue);}
+.tag-G {background-color: var(--green);}
+.tag-Pp {background-color: var(--purple);}
+.tag-R {background-color: var(--red);}
+.tag-O {background-color: var(--orange);}
+
 
 .text-primary {color: var(--primary);}
 .text-light {color: var(--light);}
@@ -222,6 +239,33 @@
 .btn-primary:active{
     background-color: var(--primary-shade);
 }
+
+
+
+.course {
+    
+    cursor: pointer;  /* cursor wait makes it crash ;) */
+}
+
+
+.course-primary{
+    opacity: 100%;
+}
+
+.course-primary:hover{
+    background-color: #333;
+    opacity: 70%;
+}
+
+.course-primary:active{
+    opacity: 60%;
+}
+
+
+
+
+
+
 
 
 
