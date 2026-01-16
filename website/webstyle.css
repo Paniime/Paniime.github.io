@@ -7,7 +7,7 @@
     --primary-shade: #251b45;
     
     
-    --light: #c0c4c8;
+    --light: #ebeff2;
     --dark: #36302d;
 
     --pink: #c35bb7;
@@ -91,8 +91,8 @@
 
     
     text-align: center;
-    width: 450px; 
-    height: 400px;
+    width: 520px; 
+    height: 500px;
 }
 
 .product-image{
@@ -110,7 +110,7 @@
     
     border: 4px solid var(--light);
     border-radius: 16px;
-    box-shadow: var(--shadow-dark);
+    
 }
 
 .product-image .product-tag{
@@ -167,11 +167,12 @@
     max-width: 1280px;
     margin: auto;
 }
-
-
-.container:hover .image {
-opacity: 0.3;
+.container2{
+    max-width: 1180px;
+    margin: auto;
 }
+
+
 
 .d-flex {display: flex;}
 
@@ -257,7 +258,7 @@ opacity: 0.3;
 .shadow-light { box-shadow: var(--shadow-light);}
 
 
-/************************ COLOURS **************************/
+/************************ btn **************************/
 
 .btn {
     border: none;
@@ -281,7 +282,7 @@ opacity: 0.3;
 }
 
 
-
+/************************ opacity **************************/
 .course {
     
     cursor: pointer;  
@@ -294,6 +295,7 @@ opacity: 0.3;
 }
 
 .course-primary:hover{
+    
     background-color: #333;
     opacity: 70%;
 }
@@ -306,13 +308,12 @@ opacity: 0.3;
 
 
 
-
+/************************ img **************************/
 
 
 
 .img-holder {
 display: inline-block;
-position: absolute;
 top: 0;
 left: 0;
 width: 60%;
@@ -325,9 +326,6 @@ text-align: center;
 z-index: 999;
 }
 
-element {
-background: url(https://media.istockphoto.com/id/1500076821/photo/happy-black-teenage-girl-in-high-school-hallway-looking-at-camera.jpg?s=612x612&w=0&k=20&c=Kc1x5IRZz7dqtUNt8k3zFB6ZKJz4CIiT-tbB0FFmAww=);
-}
 
 .img-holder .bg {
   position: absolute;
@@ -336,13 +334,16 @@ background: url(https://media.istockphoto.com/id/1500076821/photo/happy-black-te
   top: 0;
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
+  background-repeat: no-repeat ;
+  background-position: center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover !important;
+  background-size: cover ;
 }
+
+
+/************************ EMAIL **************************/
 
 
 .contact-email {
@@ -375,6 +376,7 @@ background: url(https://media.istockphoto.com/id/1500076821/photo/happy-black-te
     font-weight: bold;
     color: #555;
     min-width: 60px;
+    
 }
 
 .email-flex input {
@@ -401,6 +403,9 @@ background: url(https://media.istockphoto.com/id/1500076821/photo/happy-black-te
 .email-flex a:hover {
     background: #0056b3;
 }
+
+
+
 
 @media (max-width: 480px) {
     .email-flex {
